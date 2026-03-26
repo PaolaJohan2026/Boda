@@ -89,6 +89,16 @@
   margin-bottom: 20px;
   letter-spacing: 0.04em;
 }
+.regalo-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
 
 /* Botón copiar */
 .btn-copiar {

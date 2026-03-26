@@ -102,6 +102,22 @@
 .btn-rsvp:active {
   transform: translateY(0);
 }
+.rsvp-error {
+  grid-column: 1 / -1;
+  background: #fff0f0;
+  border: 1px solid rgba(180, 80, 80, 0.2);
+  color: #9b4444;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-align: center;
+  display: none;
+  animation: heroFadeIn 0.3s ease;
+}
+.rsvp-error.show {
+  display: block;
+}
 
 /* Mensaje de éxito */
 .rsvp-success {

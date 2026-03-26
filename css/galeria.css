@@ -46,18 +46,15 @@
   transform: scale(1.05);
 }
 
-/* Item alto: ocupa 2 filas en la primera columna */
 .galeria-item--tall {
   grid-row: span 2;
 }
 
-/* Item ancho: ocupa 2 columnas en la segunda fila */
 /* PONER: */
 .galeria-item--wide {
   grid-column: 1 / -1;
 }
-/*recuerda que esto estaba funcionado asi no mas porque estaba sin clase*/
-/* 👇 AGREGAR ESTO */
+
 .galeria-item--wide img {
   object-position: center 45%;
 }

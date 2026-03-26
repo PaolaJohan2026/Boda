@@ -15,10 +15,14 @@ btnRsvp.addEventListener('click', async () => {
   const restricciones = document.getElementById('restricciones').value.trim();
  
   /* --- Validación básica --- */
-  if (!nombre) {
-    alert('Por favor ingresa tu nombre y apellido.');
-    return;
-  }
+const rsvpError = document.getElementById('rsvpError');
+
+if (!nombre) {
+  rsvpError.classList.add('show');
+  setTimeout(() => rsvpError.classList.remove('show'), 3500);
+  return;
+}
+rsvpError.classList.remove('show'); 
  
   /* --- Estado de carga --- */
   btnRsvp.textContent = 'Enviando...';

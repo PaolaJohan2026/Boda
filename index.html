@@ -138,8 +138,7 @@
   <!-- FIN HERO -->
 
   <!-- ============================================================
-       REPRODUCTOR DE AUDIO FLOTANTE (visible en toda la página)
-       Reemplaza el src con la URL real de tu canción
+       REPRODUCTOR DE AUDIO FLOTANTE
   ============================================================ -->
   <div class="hero-audio-player hidden" id="audioPlayer">
     <!-- Botón play/pause -->
@@ -321,7 +320,7 @@
         <img src="images/1.jpeg" alt="Los anillos" />
       </div>
       <div class="galeria-item">
-        <img src="images/6.jpeg" alt="Flores" />
+        <img src="images/2.jpeg" alt="Flores" />
       </div>
       <!-- Segunda fila -->
       <div class="galeria-item">
@@ -347,6 +346,11 @@
       <h2 class="section-title">Confirmar Asistencia</h2>
       <p class="rsvp-sub">Por favor confírmanos antes del 4 de Abril</p>
 
+      <!-- Mensaje de error guapo -->
+      <div class="rsvp-error" id="rsvpError">
+        ⚠️ Por favor ingresa tu nombre y apellido.
+      </div>
+
       <div class="rsvp-form">
 
         <div class="rsvp-group rsvp-group--full">
@@ -367,7 +371,6 @@
           <select id="acompanante">
             <option value="0">Sin acompañante</option>
             <option value="1">1 acompañante</option>
-            <option value="2">2 acompañantes</option>
           </select>
         </div>
 
@@ -417,11 +420,19 @@
       <!-- Transferencia -->
       <div class="regalo-card">
         <div class="regalo-icon"><img src="images/icono-bcp.webp" alt=""></div>
-        <h3 class="regalo-titulo">Transferencia</h3>
-        <p class="regalo-nombre">BCP — Paola Salas</p>
-        <p class="regalo-numero">191-XXXXXXXX-0-XX</p>
-        <button class="btn-copiar" onclick="copiar(this, '191XXXXXXXX0XX')">
+        <h3 class="regalo-titulo">Transferencia BCP</h3>
+        <p class="regalo-nombre"></p>
+
+        <p class="regalo-label">Cuenta de ahorros</p>
+        <p class="regalo-numero">285-15541585-0-36</p>
+        <button class="btn-copiar" onclick="copiar(this, '285-15541585-0-36')">
           Copiar cuenta
+        </button>
+
+        <p class="regalo-label" style="margin-top: 16px;">Cuenta interbancaria (CCI)</p>
+        <p class="regalo-numero">002-28511554158503652</p>
+        <button class="btn-copiar" onclick="copiar(this, '002-28511554158503652')">
+          Copiar CCI
         </button>
       </div>
 
