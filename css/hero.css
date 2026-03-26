@@ -12,7 +12,7 @@
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  background: url('../images/8.jpeg') center center / cover no-repeat;
+  background: url('../images/hero.PNG') center 100% / cover no-repeat;
 }
 
 /* --- Overlay con gradiente rosa-dorado suave encima de la foto --- */
@@ -348,4 +348,7 @@
   .hero-divider::before,
   .hero-divider::after { width: 36px; }
   .hero-audio-player  { bottom: 16px; right: 16px; padding: 8px 14px 8px 10px; }
+  #hero {
+    
+  }
 }

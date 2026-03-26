@@ -3,61 +3,77 @@
    ============================================================ */
 
 #footer {
-  background: var(--color-olive);
-  color: rgba(255,255,255,0.7);
-  padding: 52px 5% 36px;
+  background: var(--color-bg);        /* crema claro, no olive */
+  color: var(--color-text-muted);
+  padding: 60px 5% 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
   text-align: center;
+  border-top: 1px solid var(--color-border);
 }
 
-/* Monograma P&J */
-.footer-monogram {
-  font-family: var(--font-display);
-  font-size: 2.2rem;
-  font-style: italic;
-  color: var(--color-white);
-  margin-bottom: 4px;
-  letter-spacing: 0.05em;
-}
-
-/* Copyright */
-.footer-copy {
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  color: rgba(255,255,255,0.5);
-}
-
-/* Links */
-.footer-links {
+/* Separador con corazón */
+.footer-divider {
   display: flex;
-  gap: 24px;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
 }
-.footer-links a {
-  color: rgba(255,255,255,0.55);
-  transition: color var(--transition);
+.footer-divider span {
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: var(--color-border);
 }
-.footer-links a:hover {
-  color: var(--color-white);
+.footer-divider svg {
+  color: var(--color-accent2);
 }
 
-/* Iconos sociales */
+/* Frase principal */
+.footer-frase {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-style: italic;
+  color: var(--color-accent2);
+  font-weight: 400;
+}
+
+/* Nombre y año */
+.footer-copy {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--color-text-muted);
+}
+
+/* Iconos sociales en círculos dorados */
 .footer-social {
   display: flex;
-  gap: 18px;
+  gap: 14px;
   margin-top: 4px;
 }
 .footer-social a {
-  color: rgba(255,255,255,0.55);
-  transition: color var(--transition), transform var(--transition);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-accent2);
+  color: var(--color-white);
   display: flex;
   align-items: center;
+  justify-content: center;
+  transition: background var(--transition), transform var(--transition);
 }
 .footer-social a:hover {
-  color: var(--color-white);
+  background: var(--color-accent);
   transform: translateY(-2px);
+}
+
+/* Crédito pequeño */
+.footer-credit {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  opacity: 0.6;
+  letter-spacing: 0.04em;
 }

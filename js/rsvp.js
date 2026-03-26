@@ -45,5 +45,15 @@ try {
     btnRsvp.textContent = 'Enviar confirmación';
     btnRsvp.disabled    = false;
   }
- 
 });
+function copiar(btn, texto) {
+  navigator.clipboard.writeText(texto).then(() => {
+    const original = btn.textContent;
+    btn.textContent = '¡Copiado! ✓';
+    btn.style.background = '#7a9e7e';
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.style.background = '';
+    }, 2000);
+  });
+}

@@ -1,0 +1,133 @@
+/* ============================================================
+   REGALOS.CSS — Sección Yape + Transferencia
+============================================================ */
+
+#regalos {
+  padding: 100px 5%;
+  background: var(--color-bg-alt, #faf8f5);
+}
+
+.regalos-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.regalos-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.regalos-sub {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  max-width: 520px;
+  margin: 12px auto 0;
+  line-height: 1.7;
+}
+
+/* Grid de 3 cards */
+.regalos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card base */
+.regalo-card {
+  background: #fff;
+  border: 1px solid rgba(180, 140, 120, 0.15);
+  border-radius: 16px;
+  padding: 36px 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.regalo-icon img{
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.regalo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.07);
+}
+
+.regalo-icon {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+.regalo-titulo {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-text, #2a2a2a);
+  margin-bottom: 10px;
+}
+
+.regalo-nombre {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.regalo-numero {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--color-text, #2a2a2a);
+  margin-bottom: 20px;
+  letter-spacing: 0.04em;
+}
+
+/* Botón copiar */
+.btn-copiar {
+  background: var(--color-accent, #9b6b5a);
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn-copiar:hover {
+  background: var(--color-accent-dark, #7a5244);
+  transform: translateY(-1px);
+}
+
+/* Card mensaje especial */
+.regalo-card--mensaje {
+  background: linear-gradient(135deg, #fdf6f0, #faf0e8);
+  border-color: rgba(180, 140, 120, 0.25);
+}
+.regalo-msg {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .regalos-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}

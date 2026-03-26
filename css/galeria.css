@@ -56,6 +56,11 @@
 .galeria-item--wide {
   grid-column: 1 / -1;
 }
+/*recuerda que esto estaba funcionado asi no mas porque estaba sin clase*/
+/* 👇 AGREGAR ESTO */
+.galeria-item--wide img {
+  object-position: center 45%;
+}
 
 /* Overlay hover */
 .galeria-item::after {
