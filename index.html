@@ -259,8 +259,8 @@
           <div class="detalle-icon">📍</div>
           <div>
             <p class="detalle-label">Ubicación</p>
-            <p class="detalle-value">Municipalidad Distrital de Yucay(Boda Civil)<br></p>
-            <p class="detalle-value">  <br>  </p>
+            <p class="detalle-value">Municipalidad Distrital de Yucay<br>(Boda Civil)</p>
+            <p class="detalle-value">Hacienda el Maizal <br> (Boda Religiosa)</p>
           </div>
         </div>
 
@@ -308,36 +308,39 @@
   ============================================================ -->
   <section id="galeria">
     <div class="galeria-header">
-      <h2 class="section-title">Galería de Momentos</h2>
-      <p class="galeria-sub">Un vistazo a nuestros recuerdos</p>
+      <h2 class="section-title">Nuestros momentos favoritos</h2>
+<p class="galeria-sub">Porque los mejores recuerdos se viven dos veces</p>
     </div>
 
+    <!-- Reemplaza tu galeria-grid completa por esto -->
     <div class="galeria-grid">
-      <!-- Imagen grande izquierda -->
-      <div class="galeria-item galeria-item--tall">
+      <div class="galeria-item galeria-item--tall" onclick="abrirModal('images/5.jpeg')">
         <img src="images/5.jpeg" alt="Paola y Johan" />
       </div>
-      <!-- Columna derecha arriba -->
-      <div class="galeria-item">
+      <div class="galeria-item" onclick="abrirModal('images/1.jpeg')">
         <img src="images/1.jpeg" alt="Los anillos" />
       </div>
-      <div class="galeria-item">
+      <div class="galeria-item" onclick="abrirModal('images/12.jpeg')">
         <img src="images/12.jpeg" alt="Flores" />
       </div>
-      <!-- Segunda fila -->
-      <div class="galeria-item">
+      <div class="galeria-item" onclick="abrirModal('images/3.jpeg')">
         <img src="images/3.jpeg" alt="Brindis" />
       </div>
-      <div class="galeria-item">
+      <div class="galeria-item" onclick="abrirModal('images/4.jpeg')">
         <img src="images/4.jpeg" alt="Decoración" />
       </div>
-      <!-- Imagen ancha abajo -->
-      <div class="galeria-item galeria-item--wide">
+      <div class="galeria-item galeria-item--wide" onclick="abrirModal('images/9.jpeg')">
         <img src="images/9.jpeg" alt="Salón" />
       </div>
     </div>
   </section>
   <!-- FIN GALERÍA -->
+
+   <!-- Modal galería -->
+  <div class="galeria-modal" id="galeriaModal" onclick="cerrarModal()">
+    <button class="galeria-modal-close" onclick="cerrarModal()">✕</button>
+    <img id="galeriaModalImg" src="" alt="Foto ampliada" onclick="event.stopPropagation()" />
+  </div>
 
 
   <!-- ============================================================

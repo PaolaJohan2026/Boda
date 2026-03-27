@@ -61,3 +61,18 @@ function copiar(btn, texto) {
     }, 2000);
   });
 }
+function abrirModal(src) {
+  document.getElementById('galeriaModalImg').src = src;
+  document.getElementById('galeriaModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function cerrarModal() {
+  document.getElementById('galeriaModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Cerrar con tecla Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') cerrarModal();
+});

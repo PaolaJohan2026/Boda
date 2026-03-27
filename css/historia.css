@@ -85,3 +85,10 @@
     margin-top: 0;
   }
 }
+@media (max-width: 900px) {
+  .historia-img-wrap img {
+    width: 100%;
+    height: auto;      /* ← sin alto fijo */
+    object-fit: unset; /* ← sin zoom */
+  }
+}
